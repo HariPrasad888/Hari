@@ -1,9 +1,12 @@
 package com.employee.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
-@Component
+@Data
+@AllArgsConstructor
 public class Employee {
 
     private int id;
@@ -11,6 +14,6 @@ public class Employee {
     private String lname;
     private String dept;
     private int salary;
-    private List work;
+    //private List work;
 
 }
